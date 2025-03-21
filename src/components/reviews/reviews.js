@@ -23,6 +23,7 @@ export default function Reviews(props) {
 
    
     <button className="left-btn">{props.btnleft}</button>
+   
     <button className="right-btn">{props.btnright}</button>
     </div>
     

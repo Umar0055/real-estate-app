@@ -1,11 +1,13 @@
  import React from 'react'
 import Main from '../../components/header/main'
 import Partners from '../../components/partners/partners'
+import Areas from '../../components/areas/areas'
 import Homeinfo from '../../components/homeinfo/homeinfo'
 import Start from '../../components/start/start'
 import Reviews from '../../components/reviews/reviews'
 import Servies from '../../components/services/servies'
-import {main ,partnersLogos,homeinfo,start,reviews,servies} from '../../components/constant/constant'
+import Foooter from '../../components/footer/footer'
+import {main ,partnersLogos,areas ,homeinfo,start,reviews,servies,footer} from '../../components/constant/constant'
 
 export default function Home() {
   return (
@@ -33,6 +35,45 @@ main.map((main,index)=>{
 </ul>
 
 </section>
+
+<section className="areas-sec" >
+
+<header>
+  <h2 className="card-h2">popular areas</h2>
+</header>
+
+<div className="areas-posts">
+
+  <ul className="areas-posts-list">
+
+    {areas.map((areas, index)=>{
+      return <Areas key={index} img={areas.img} title={areas.title} text={areas.text} details={areas.details}/>
+    })}
+  </ul>
+
+</div>
+
+</section>
+  <section className='servies'>
+    <h3 className='servies-heading'>why to choose us</h3>
+
+ 
+  <div className="servies-sec">
+{
+  servies.map((servies,index)=>{
+    return <Servies key={index} img={servies.img} title={servies.title} text={servies.text} />
+  })
+}
+</div>
+   </section>
+
+  <section className="reviews-sec">
+    {
+      reviews.map((reviews,index)=>{
+        return <Reviews key={index} title={reviews.title} text={reviews.text} name={reviews.name} username={reviews.username} btnleft={reviews.btnleft} btnright={reviews.btnright} />
+      })
+    }
+  </section>
 <section className="homeinfo-sec">
 
   {
@@ -50,26 +91,25 @@ main.map((main,index)=>{
     })
   }
   </section>
-  <section className="reviews-sec">
-    {
-      reviews.map((reviews,index)=>{
-        return <Reviews key={index} title={reviews.title} text={reviews.text} name={reviews.name} username={reviews.username} btnleft={reviews.btnleft} btnright={reviews.btnright} />
-      })
-    }
-  </section>
-  <section className='servies-heading'>
-    <h3>why to choose us</h3>
+  <footer className="footer">
+  <div class="footer-section-left">
+  <div className='footer-box'>
+                <h2 class="footer-title">rentiz</h2>
+                </div>
+                <p class="footer-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          <ul class="footer-social">
+            <li>insta</li>
+            <li>whatapp</li>
+            <li>gmail</li>
 
- 
-  <div className="servies-sec">
+          </ul>
+            </div>
 {
-  servies.map((servies,index)=>{
-    return <Servies key={index} img={servies.img} title={servies.title} text={servies.text} />
-  })
-}
-</div>
-   </section>
-
+  footer.map((footer,index)=>{
+    return <Foooter key={index} title={footer.title} link1={footer.link1} link2={footer.link2} link3={footer.link3} />
+  }
+)}
+  </footer>
   </>
   )
 }

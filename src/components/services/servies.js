@@ -4,12 +4,16 @@ export default function Servies(props) {
   return (
     <div className="servies-sec">
 <div className="servies-contentsec">
-<div className="serivesimage-sec">
-  <img src={props.img}  alt="Description"/>
+<div className="serviesimage-sec" >
+  <img src={props.img} style={{
+    width:"100px",
+   
+  }}
+ alt="Description"/>
 </div>
   <div className="servies-contenttext">
   
-    <h2 className="serviex-head">{props.title} </h2>
+    <h2 className="servies-head">{props.title} </h2>
     <p className="servies-text">{props.text} </p>
 
     

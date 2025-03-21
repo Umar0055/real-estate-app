@@ -50,7 +50,7 @@
   height: 100px;
 }
 
-ul {
+.navbar-list {
   display: flex;
 
   list-style: none;
@@ -154,7 +154,7 @@ ul {
   justify-content: flex-start;
   align-items: flex-start;
   gap: 40px;
-
+list-style: none;
   padding-left: 180px;
 
 
@@ -177,6 +177,9 @@ ul {
   font-family: 'Times New Roman', Times, serif;
   text-transform: capitalize;
 }
+/* areas */
+
+
 
 /* homeinfo css */
 .homeinfo-sec {
@@ -317,7 +320,7 @@ margin-bottom: 20px;
 
 }
 .reviews-name{
-  margin-left: 110px;
+  margin-left: 140px;
   color: #ffffff;
   line-height: 20px;
   font-size: 18px;
@@ -326,7 +329,7 @@ margin-bottom: 20px;
   
 }
 .reviews-username{
-  margin-left: 110px;
+  margin-left: 140px;
   color: #ffffff;
   line-height: 20px;
   font-size: 10px;
@@ -344,7 +347,7 @@ background-color: #242121;
 color: white;
 text-transform: capitalize;
 
-border-right:gray ;
+border: none;
 
 }
 .right-btn{
@@ -353,47 +356,151 @@ border-right:gray ;
   margin-left: 10px;
   height: 30px;
 width: 40px;
+border: none;
 }
 /* servies start */
+.servies-heading{
+  background-color: #242121;
+color: white;
+font-size: 30px;
+text-align: center;
+padding: 20px;
+font-family: 'Times New Roman', Times, serif;
+text-transform: capitalize;
+}
 .servies-sec {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  padding: 50px;
+  justify-content: space-around;
   background-color: #242121;
 }
 
 .serviesimage-sec img {
-  width: 600px;
-  height: 400px;
+  width: 10px;
+  height: 100px;
+  border-radius: 50%;
+  margin-left: 130px;
+
 
 
 }
 
 .servies-contentsec {
-  flex: 1;
-
+  justify-content: space-between;
 }
 
 
 .servies-contenttext {
   margin-bottom: 50px;
-
 }
 
 .servies-head {
   font-size: 40px;
   margin-left: 100px;
+  font-size: 20px;
+  text-transform: capitalize;
   color: white;
   font-family: 'Times New Roman', Times, serif;
   text-transform: capitalize;
-
+margin-top: 10px;
 }
 
 .servies-text {
-  margin-left: 100px;
+padding-left: 20px;
+margin-left: 20px;
   color: #ffffff;
   margin-top: 20px;
   line-height: 20px;
 
+}
+/* footer start */
+
+.footer {
+  display: flex;
+  justify-content: space-between; 
+  padding: 20px;
+  background-color: #000000;
+}
+
+
+
+
+.footer-section-left {
+  flex: 1; 
+  text-align: left;
+}
+
+
+
+
+
+.footer-section-dub {
+  display: flex;
+  flex-direction: column; 
+  align-items: center; 
+  
+}
+
+
+
+.footer-title {
+  color: #fff;
+  text-transform: capitalize;
+  font-size: 30px;
+padding-left: 40px;
+padding-top: 20px;
+
+
+}
+
+.footer-text {
+  margin-top: 30px;
+line-height: 20px;
+  color: #fff;
+  font-size: 12px;
+  padding-left: 300px;
+  padding-right: 100px;
+}
+
+
+
+.footer-links-title {
+  color: #fff;
+  text-transform: capitalize;
+  font-size: 25px;
+margin-bottom: 20px;
+
+}
+
+
+
+.links {
+  color: #fff;
+  font-size: 20px;
+  text-transform: capitalize;
+  margin-right: 20px;
+ line-height: 30px;
+  list-style: none;
+}
+.footer-box {
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 300px;
+  margin-top: 20px;
+  padding-left: 20px;
+  width: 5px;
+  background-color: rgb(5, 146, 69);
+}
+.footer-social{
+  margin-left: 60px;
+  margin-top: 20px;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  list-style: none;
+  text-transform: capitalize;
 }

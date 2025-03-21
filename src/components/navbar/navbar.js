@@ -7,7 +7,7 @@ export default function Navbar() {
       <div className='box'>
       <h3 className="logo">Rentiz</h3>
       </div>
-      <ul>
+      <ul className="navbar-list">
         <li>  <Link to="/" className="navbar-link">Home</Link></li>
         <li> <Link to="/about" className="navbar-link">About us</Link> </li>
         <li> <Link to="/buying" className="navbar-link">Buying</Link></li>
