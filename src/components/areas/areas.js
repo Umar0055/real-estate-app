@@ -2,14 +2,16 @@ import React from 'react';
 
 export default function Areas(props) {
   return (
-    <li>
-    <div className="card">
-      <img src={props.img} className="card-img-top" alt="Card image" />
-      <div className="card-body">
-        <h5 className="card-title">{props.title}</h5>
-        <p className="card-text">{props.text}</p>
-      </div>
+    <div className="areas-contantsec">
+    <div className="areas-sec">
+        <img src={props.img} className="area-img" alt="House 1"/>
+        <h3 className="areas-title">{props.title}</h3>
+        <p className="area-text">{props.text}</p>
+        <div className="areas-details">
+            <span>{props.details}</span>
+          
+        </div>
     </div>
-  </li>
+    </div>
   );
 }

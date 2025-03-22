@@ -38,7 +38,7 @@ const partnersLogos = [
 // areas start
 const areas =[{
     img: areahouse,
-   details:"4rooms, 2bathrooms, ",
+   details:"4rooms, 2bathrooms",
     title:"dha",
     text:"street 3 p4"
 
@@ -132,4 +132,4 @@ const footer =[{
 },
 ]
 
-export { main , partnersLogos,areas, homeinfo, start, reviews,servies,footer };
+export { main , partnersLogos, homeinfo, start, reviews,servies,footer,areas };

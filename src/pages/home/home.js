@@ -36,24 +36,24 @@ main.map((main,index)=>{
 
 </section>
 
-<section className="areas-sec" >
+<section className="areas-container">
 
-<header>
-  <h2 className="card-h2">popular areas</h2>
-</header>
+        <h2 className="area-head">Popular Residence</h2>
+        <div className="areas-contant">
+         {
+          areas.map((areas, index) => {
+            return <Areas key={index} img={areas.img} title={areas.title} text={areas.text} details={areas.details}/>
+         })
+        }
+      
+            </div>
+        
+            
+        
+        <button className="view-btn">View All Properties</button>
+        </section>
 
-<div className="areas-posts">
 
-  <ul className="areas-posts-list">
-
-    {areas.map((areas, index)=>{
-      return <Areas key={index} img={areas.img} title={areas.title} text={areas.text} details={areas.details}/>
-    })}
-  </ul>
-
-</div>
-
-</section>
   <section className='servies'>
     <h3 className='servies-heading'>why to choose us</h3>
 
@@ -92,12 +92,12 @@ main.map((main,index)=>{
   }
   </section>
   <footer className="footer">
-  <div class="footer-section-left">
+  <div className="footer-section-left">
   <div className='footer-box'>
-                <h2 class="footer-title">rentiz</h2>
+                <h2 className="footer-title">rentiz</h2>
                 </div>
-                <p class="footer-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-          <ul class="footer-social">
+                <p className="footer-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          <ul className="footer-social">
             <li>insta</li>
             <li>whatapp</li>
             <li>gmail</li>

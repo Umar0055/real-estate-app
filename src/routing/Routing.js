@@ -7,6 +7,7 @@ import Renting from '../pages/renting/renting'
 import Contact from '../pages/contact us/contact'
 import { BrowserRouter, Routes, Route } from "react-router";
 import Navbar from '../components/navbar/navbar'
+import Footer from '../components/footer/footer'
 export default function Routing() {
   return (
     <BrowserRouter>
@@ -19,6 +20,7 @@ export default function Routing() {
         <Route path="/renting" element={<Renting />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
+      <Footer />
     </BrowserRouter>
   )
 }
